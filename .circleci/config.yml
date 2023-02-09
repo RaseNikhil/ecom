@@ -4,11 +4,13 @@ jobs:
     docker:
       - image : node:19
     steps:
-      - run: echo "Docker image executed"
+      - run:
+         - command : echo "Docker image executed"
   tests:
     steps:
       - checkout
-      - run: echo "Docker image executed"
+      - run:
+        - command : echo "Docker image executed"
 
 workflows:
   version: 2
