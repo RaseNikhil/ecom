@@ -7,9 +7,11 @@ jobs:
       - checkout
       - run: echo "Docker image executed"
   tests:
+    docker :
+      - image : node:19
     steps:
       - checkout
-      - run: echo "Docker"
+      - run: node --version
 
 workflows:
   version : 2
