@@ -14,5 +14,12 @@ workflows:
   version: 2
   minimal:
     jobs:
-      - build
-      - tests
+      build:
+        docker:
+          - image : node:19
+        steps:
+          - run: echo "Docker image executed"
+      tests:
+        steps:
+          - checkout
+          - run: echo "Docker"
