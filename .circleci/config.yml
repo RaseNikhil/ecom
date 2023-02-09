@@ -1,19 +1,17 @@
-version: 2
+version 2.1
 jobs:
   build:
     docker:
       - image : node:19
     steps:
-      - run:
-         - command : echo "Docker image executed"
+      - checkout
+      - run: echo "Docker image executed"
   tests:
     steps:
       - checkout
-      - run:
-        - command : echo "Docker image executed"
+      - run: echo "Docker"
 
 workflows:
-  version: 2
   minimal:
     jobs:
       - build
