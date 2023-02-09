@@ -12,7 +12,6 @@ jobs:
 
 workflows:
   version: 2
-  minimal:
     jobs:
       - build
       - tests
