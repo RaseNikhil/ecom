@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 jobs:
   build:
     docker:
@@ -11,7 +11,7 @@ jobs:
       - run: echo "Docker image executed"
 
 workflows:
-  version: 2.1
+  version: 2
   minimal:
     jobs:
       - build
