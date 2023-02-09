@@ -12,6 +12,7 @@ jobs:
       - run: echo "Docker"
 
 workflows:
+  version : 2
   minimal:
     jobs:
       - build
